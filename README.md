@@ -1,54 +1,14 @@
-# React + TypeScript + Vite
+### Problem Statement
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- You have to create a simple invoicing website with ReactJS.
+- Create an Invoice creation/editing form.
+- The invoice form will contain seven fields: Qty, Price, Discount %, Discount, Tax %, Tax, and Total Price.
+- All the fields must exist in the form and all should be editable.
+- All the field values must be dependent on the other field values. i.e., changing the value of any field will change the value of the other fields where that field is used as a dependency to calculate its value. Changing the Qty will change the Discount, Tax, and Total Price. Similarly, this logic will be applicable to other fields as well.
+- Submitting the form will append a row in the grid that will show all the created invoices.
+- All the rows in the grid should have inline edit functionality.
+- You are allowed to use any UI library.
+- You can use up to 3 states (3 React useStates Hooks) for the whole project.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+Deadline: 3 hours
+How to Submit: You have to share the GitHub repo along with the deployed link of the assignment.

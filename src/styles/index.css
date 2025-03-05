@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+    --navbar-height: 8vh;
+    --body-height: 92vh;
+}
+
+@layer{
+    .input-container{
+        @apply flex flex-col gap-2 my-2
+    }
+
+    .input{
+        @apply bg-gray-50 rounded border
+    }
+}

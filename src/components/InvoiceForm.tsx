@@ -44,26 +44,31 @@ const InvoiceForm = ({setCurrentInvoice, invoices, currentInvoice, setInVoices}:
     }
 
   return (
-    <div className="flex-1 bg-white rounded shadow max-h-[100%] overflow-auto py-2 px-4">
+    <div className="flex-1 bg-white rounded shadow max-h-[100%] overflow-auto py-2 px-4 max-md:text-xs">
         <form onSubmit={(e)=>handleSubmit(e)}>
             <h1 className="my-2 font-semibold text-lg">Add Invoice:</h1>
 
-            <InputElement
-                title={"Quantity"}
-                name="quantity"
-                handleChange={handleChange}
-                value={currentInvoice.quantity}
-            />
-
-            <InputElement
-                title={"Price"}
-                name="price"
-                handleChange={handleChange}
-                value={currentInvoice.price}
-            />
+            <div className="flex gap-2">
+                <div className="w-[50%]">
+                    <InputElement
+                        title={"Quantity"}
+                        name="quantity"
+                        handleChange={handleChange}
+                        value={currentInvoice.quantity}
+                    />
+                </div>
+                <div className="w-[50%]">
+                    <InputElement
+                        title={"Price"}
+                        name="price"
+                        handleChange={handleChange}
+                        value={currentInvoice.price}
+                    />
+                </div>
+            </div>
 
             <div className="flex gap-2">
-                <div>
+                <div className="w-[50%]">
                     <InputElement
                         title={"Discount Percentage"}
                         name="discountPercentage"
@@ -71,7 +76,7 @@ const InvoiceForm = ({setCurrentInvoice, invoices, currentInvoice, setInVoices}:
                         value={currentInvoice.discountPercentage}
                     />
                 </div>
-                <div>
+                <div className="w-[50%]">
                     <InputElement
                         title={"Discount"}
                         name="discount"
@@ -82,7 +87,7 @@ const InvoiceForm = ({setCurrentInvoice, invoices, currentInvoice, setInVoices}:
             </div>
 
             <div className="flex gap-2">
-                <div>
+                <div className="w-[50%]">
                     <InputElement
                         title={"Tax Percentage"}
                         name="taxPercentage"
@@ -90,7 +95,7 @@ const InvoiceForm = ({setCurrentInvoice, invoices, currentInvoice, setInVoices}:
                         value={currentInvoice.taxPercentage}
                     />
                 </div>
-                <div>
+                <div className="w-[50%]">
                     <InputElement
                         title={"Tax"}
                         name="tax"

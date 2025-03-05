@@ -10,16 +10,16 @@ type PropType = {
 
 const InvoiceTable = ({invoices, setCurrentInvoice, currentInvoice}:PropType) => {
   return (
-    <div className='h-full w-[70%] bg-white rounded shadow p-2'>
-      <table className="w-full text-sm">
+    <div className='h-full w-[70%] max-md:w-full max-md:h-[50%]  overflow-auto bg-white rounded shadow p-2'>
+      <table className="w-full text-sm max-lg:text-xs ">
         <thead>
-          <tr className="bg-sky-400 rounded-md text-gray-800">
+          <tr className="bg-black rounded-md text-gray-400">
             <th className="p-2 rounded-s-md">S.No</th>
             <th className="p-2">Quantity</th>
             <th className="p-2">Price</th>
-            <th className="p-2">Discount Percentage</th>
+            <th className="p-2">Discount(%)</th>
             <th className="p-2">Discount</th>
-            <th className="p-2">Tax Percentage</th>
+            <th className="p-2">Tax(%)</th>
             <th className="p-2">Tax</th>
             <th className="p-2">Total Price</th>
             <th className="p-2 rounded-e-md">Update</th>

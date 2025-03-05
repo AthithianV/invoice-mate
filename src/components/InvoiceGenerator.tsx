@@ -16,7 +16,7 @@ const InvoiceGenerator = () => {
     });
 
   return (
-    <div className="h-[var(--body-height)] bg-gray-100 p-2 flex gap-2">
+    <div className="h-[var(--body-height)] bg-gray-100 p-2 flex gap-2 max-md:flex-col">
         <InvoiceTable
             invoices={invoices}
             currentInvoice={currentInvoice}

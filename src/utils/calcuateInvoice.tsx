@@ -17,7 +17,7 @@ const calcuateInvoice = (value:number, name:string, prevInvoice:Invoice) => {
             : name === "tax" ? precise(value/price*100) : prevInvoice.taxPercentage
     const tax = name === "tax" ? value
             : name === "taxPercentage" ? precise(value*price/100) : prevInvoice.tax
-    const totalPrice = (price*quantity)-(discount*quantity)-(tax*quantity)
+    const totalPrice = (price*quantity)-(discount*quantity)+(tax*quantity)
 
     return {
         quantity,

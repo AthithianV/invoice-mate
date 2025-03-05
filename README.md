@@ -7,6 +7,10 @@
 - All the rows in the grid should have inline edit functionality.
 - Only 2 states (2 React useStates Hooks) have been used for the whole project.
 
+### Deployment
+
+[Link](https://invoice-mate.netlify.app/)
+
 ### Library:
 
 1. React
